@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/circle.xml" value="0.216" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/ic_settings.xml" value="0.216" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/mau.xml" value="0.2045" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/quayve.xml" value="0.216" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/vien.xml" value="0.2045" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/vienbutton.xml" value="0.2045" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable/ic_list.xml" value="0.1105" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/activity_main.xml" value="0.3581780538302277" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/activity_profile.xml" value="0.2151268115942029" />
       </map>
     </option>
   </component>
