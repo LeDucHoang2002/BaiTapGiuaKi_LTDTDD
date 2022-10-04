@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">BaiTapGiuaKi_LTDTDD</string>
+    <string name="app_name">LoginPageUi</string>
+    <string name="log_in">Log In</string>
 </resources>

@@ -18,4 +18,8 @@
     <color name="follwersBg">#63C9FF</color>
     <color name="followingBg">#70DCE5</color>
     <color name="grey">#E5E5E5</color>
+    <color name="textColor">#ECE5EC</color>
+    <color name="pinkColor">#FF003B</color>
+    <color name="tansparentColor">#00FFFFFF</color>
+
 </resources>
