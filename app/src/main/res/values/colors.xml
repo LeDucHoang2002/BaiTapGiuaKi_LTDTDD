@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_500">#0E06EC</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#52D185</color>
     <color name="teal_700">#FF018786</color>
@@ -18,8 +18,8 @@
     <color name="follwersBg">#63C9FF</color>
     <color name="followingBg">#70DCE5</color>
     <color name="grey">#E5E5E5</color>
-    <color name="textColor">#ECE5EC</color>
-    <color name="pinkColor">#FF003B</color>
-    <color name="tansparentColor">#00FFFFFF</color>
+        <color name="textColor">#ECE5EC</color>
+        <color name="pinkColor">#FF003B</color>
+        <color name="tansparentColor">#00FFFFFF</color>
 
 </resources>

@@ -27,9 +27,9 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="9dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="9dp"
                 android:layout_marginEnd="9dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="9dp"
                 android:adjustViewBounds="true"
                 android:background="@drawable/circle"
                 android:padding="3dp"
@@ -47,7 +47,7 @@
             android:layout_marginTop="10dp"
             android:text="LÊ ĐỨC HOÀNG"
             android:textColor="@color/white"
-            android:textSize="18dp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
@@ -59,7 +59,7 @@
             android:text="MSV: 2050531200150"
             android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textSize="14sp" />
 
         <ImageButton
             android:id="@+id/im_btn"
@@ -108,7 +108,7 @@
                     android:fontFamily="sans-serif-light"
                     android:text="453k"
                     android:textColor="@color/white"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -117,7 +117,7 @@
                     android:textAllCaps="true"
                     android:text="followers"
                     android:textColor="@color/white"
-                    android:textSize="12dp"
+                    android:textSize="12sp"
                     />
             </LinearLayout>
         </RelativeLayout>
@@ -142,7 +142,7 @@
                     android:fontFamily="sans-serif-light"
                     android:text="873k"
                     android:textColor="@color/white"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -151,7 +151,7 @@
                     android:textAllCaps="true"
                     android:text="following"
                     android:textColor="@color/white"
-                    android:textSize="12dp"
+                    android:textSize="12sp"
                     />
             </LinearLayout>
         </RelativeLayout>
@@ -183,7 +183,7 @@
                     android:paddingLeft="15dp"
                     android:text="Email"
                     android:textColor="#0022FF"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/tvEmail"
@@ -194,7 +194,7 @@
                     android:paddingLeft="25dp"
                     android:text="Leduchoang@gmail.com"
                     android:textColor="#FFE600"
-                    android:textSize="18dp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <View
@@ -216,7 +216,7 @@
                     android:paddingLeft="15dp"
                     android:text="Phone"
                     android:textColor="#0022FF"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/tvPhone"
@@ -227,7 +227,7 @@
                     android:paddingLeft="25dp"
                     android:text="0912345678"
                     android:textColor="#FFE600"
-                    android:textSize="18dp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <View
@@ -249,7 +249,7 @@
                     android:paddingLeft="10dp"
                     android:text="Twitter"
                     android:textColor="#0022FF"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/tvTW"
@@ -260,7 +260,7 @@
                     android:paddingLeft="25dp"
                     android:text="ABC123"
                     android:textColor="#FFE600"
-                    android:textSize="18dp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <View
@@ -282,7 +282,7 @@
                     android:paddingLeft="15dp"
                     android:text="Facebook"
                     android:textColor="#0022FF"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/tvFB"
@@ -294,7 +294,7 @@
                     android:paddingLeft="25dp"
                     android:text="Lê Đức Hoàng"
                     android:textColor="#FFE600"
-                    android:textSize="18dp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
