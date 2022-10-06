@@ -334,5 +334,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:background="@drawable/mau3"
-        android:gravity="bottom"></LinearLayout>
+        android:gravity="bottom"/>
 </RelativeLayout>
