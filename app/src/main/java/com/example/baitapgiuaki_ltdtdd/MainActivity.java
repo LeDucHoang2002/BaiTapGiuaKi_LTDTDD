@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     TextView editText,editText2,sigup,logIn;
     LinearLayout singUpLayout,logInLayout;
     Button singIn;
+    EditText eMails,passwordss,passwords01;
     CheckBox cbRemember;
     SharedPreferences sharedPreferences;
     @Override
@@ -32,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         logInLayout=(LinearLayout)findViewById(R.id.logInLayout);
         singIn=(Button)findViewById(R.id.singIn);
         cbRemember =(CheckBox)findViewById(R.id.cb_Save);
+        eMails = (EditText) findViewById(R.id.eMails);
+        passwordss = (EditText) findViewById(R.id.passwordss);
+        passwords01 = (EditText) findViewById(R.id.passwords01);
         sharedPreferences =getSharedPreferences("data", MODE_PRIVATE);
         editText.setText(sharedPreferences.getString("taikhoan",""));
         editText2.setText(sharedPreferences.getString("matkhau",""));
@@ -83,8 +88,28 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent=new Intent(getApplicationContext(),Activity_profile.class);
                     startActivity(intent);
                 }else {
-                    Toast.makeText(MainActivity.this, "Đăng Nhập Không Thành Công", Toast.LENGTH_SHORT).show();
-                }
+                    {
+                        if(uername.equals("")==true&&pass.equals("")==true){
+                        String uername1 =eMails.getText().toString().trim();
+                        String pass1 =passwordss.getText().toString().trim();
+                        String pass2 =passwords01.getText().toString().trim();
+                        if(pass1.equals(passwordss)==pass2.equals(passwords01)){
+                            Intent intent=new Intent(getApplicationContext(),Activity_profile.class);
+                            startActivity(intent);
+                            Toast.makeText(MainActivity.this, "Đăng Nhập Thành Công ", Toast.LENGTH_SHORT).show();
+                        }else {
+                            if (uername1.equals("")==true){
+                                Toast.makeText(MainActivity.this, "Yêu Cầu Nhập Email", Toast.LENGTH_SHORT).show();
+                            }
+                            if (pass1.equals(passwordss.getText().toString())!=pass2.equals(passwords01.getText().toString())){
+                                Toast.makeText(MainActivity.this, "Mật khẩu không khớp", Toast.LENGTH_SHORT).show();
+                            }
+                            if (pass1.equals("")==true||pass2.equals("")==true){
+                                Toast.makeText(MainActivity.this, "Yêu Cầu Nhập mật khẩu", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }
+                }}
             }
         });
     }

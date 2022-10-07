@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">LoginPageUi</string>
+    <string name="app_name">Log Out</string>
     <string name="log_in">Log In</string>
     <string name="nav_home">Home</string>
-    <string name="nav_Favorite">Favorite</string>
+    <string name="nav_File">File</string>
 
     <string name="navigation_drawr_open">navigation_drawr_open</string>
     <string name="navigation_drawr_close">navigation_drawr_close</string>

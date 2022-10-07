@@ -12,9 +12,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
-import java.sql.RowId;
-
-    public class Activity_profile extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Activity_profile extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
         private DrawerLayout drawerLayout;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +33,7 @@ import java.sql.RowId;
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             int id=item.getItemId();
             if(id== R.id.nav_home){
-                Intent intent=new Intent(getApplicationContext(),Activity_Listview.class);
+                Intent intent=new Intent(getApplicationContext(), Activity_File.class);
                 startActivity(intent);
             }
             drawerLayout.closeDrawer(GravityCompat.START);

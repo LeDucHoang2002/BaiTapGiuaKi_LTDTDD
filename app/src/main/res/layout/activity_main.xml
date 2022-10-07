@@ -38,6 +38,7 @@
     </RelativeLayout>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/layout2"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         android:layout_marginTop="115dp"
@@ -318,21 +319,14 @@
                     android:layout_height="35dp"
                     android:layout_margin="10dp"
                     android:src="@drawable/ic_twitter" />
-
-
             </LinearLayout>
-
-
         </LinearLayout>
-
-
     </androidx.cardview.widget.CardView>
 
     <LinearLayout
+        android:layout_below="@+id/layout2"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
+        android:layout_height="match_parent"
         android:background="@drawable/mau3"
-        android:gravity="bottom"/>
+        android:gravity="bottom" />
 </RelativeLayout>

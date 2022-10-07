@@ -25,17 +25,12 @@
             android:background="@drawable/mau2"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+
             <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-            </RelativeLayout>
-
-            <LinearLayout
                 android:id="@+id/layout1"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="255dp"
                 android:layout_marginBottom="0dp"
                 android:background="@drawable/mau1">
 
@@ -48,76 +43,44 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="45dp"
+                        android:layout_marginTop="20dp"
+                        android:padding="5dp"
                         android:background="@drawable/circle_border">
+                        <androidx.cardview.widget.CardView
+                            app:cardCornerRadius="50dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
 
-                        <ImageView
-                            android:id="@+id/img"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:layout_marginStart="9dp"
-                            android:layout_marginTop="9dp"
-                            android:layout_marginEnd="9dp"
-                            android:layout_marginBottom="9dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/circle"
-                            android:padding="3dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/profile" />
+                            <ImageView
+                                android:id="@+id/img"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/circle"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/profile" />
+                        </androidx.cardview.widget.CardView>
 
                     </RelativeLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:gravity="center"
-                        android:text="Level Up"
-                        android:textColor="@color/white"
-                        android:textSize="26sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginTop="100dp"
-                        android:background="@drawable/mau4"
-                        android:gravity="center"
-                        android:text="18"
-                        android:textColor="@color/white"
-                        android:textSize="22sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginTop="100dp"
-                        android:layout_marginRight="25dp"
-                        android:background="@drawable/mau4"
-                        android:gravity="center"
-                        android:text="18"
-                        android:textColor="@color/white"
-                        android:textSize="22sp"
-                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tv_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/imgUser"
+                        android:layout_below="@+id/imgUser"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:text="LÊ ĐỨC HOÀNG"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        android:textSize="22sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvMaSV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/tv_name"
+                        android:layout_below="@+id/tv_name"
                         android:layout_centerHorizontal="true"
                         android:text="MSV: 2050531200150"
                         android:textAllCaps="true"
@@ -136,21 +99,97 @@
                         android:scaleType="centerInside"
                         android:src="@drawable/quayve" />
                 </RelativeLayout>
-            </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="350dp"
+                android:layout_marginTop="210dp"
+                android:gravity="center"
+                android:layout_height="67dp">
+
+                <LinearLayout
+
+                    android:id="@+id/rellay1"
+                    android:layout_width="300dp"
+                    android:layout_height="66dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/mau4"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/fl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="453k"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="followers"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="italic|bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/mau4"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/fl2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="873k"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="following"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="italic|bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/layout2"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:layout_below="@id/layout1">
+                android:layout_below="@id/layout1"
+                android:layout_marginTop="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginRight="60dp"
-                    android:background="@drawable/vien"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -163,26 +202,41 @@
                             android:layout_height="wrap_content"
                             android:paddingLeft="15dp"
                             android:text="Email"
-                            android:textColor="#0022FF"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:id="@+id/tvEmail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:fontFamily="sans-serif-light"
-                            android:paddingLeft="25dp"
-                            android:text="Leduchoang@gmail.com"
-                            android:textColor="#FFE600"
-                            android:textSize="16sp"
+                            android:textColor="#0288D1"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="6dp"
+                                android:src="@drawable/icons_email" />
+
+                            <TextView
+                                android:id="@+id/tvEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="sans-serif-light"
+                                android:paddingLeft="10dp"
+                                android:text="Leduchoang@gmail.com"
+                                android:textColor="#1D26DD"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:layout_marginTop="8dp"
-                            android:background="@color/grey" />
+                            android:background="@color/purple_500" />
 
                     </LinearLayout>
 
@@ -196,26 +250,40 @@
                             android:layout_height="wrap_content"
                             android:paddingLeft="15dp"
                             android:text="Phone"
-                            android:textColor="#0022FF"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:id="@+id/tvPhone"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:fontFamily="sans-serif-light"
-                            android:paddingLeft="25dp"
-                            android:text="0912345678"
-                            android:textColor="#FFE600"
-                            android:textSize="16sp"
+                            android:textColor="#0288D1"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="6dp"
+                                android:src="@drawable/icons_phone" />
+
+                            <TextView
+                                android:id="@+id/tvPhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="sans-serif-light"
+                                android:paddingLeft="10dp"
+                                android:text="Leduchoang@gmail.com"
+                                android:textColor="#1D26DD"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:layout_marginTop="8dp"
-                            android:background="@color/grey" />
+                            android:background="@color/purple_500" />
 
                     </LinearLayout>
 
@@ -227,28 +295,42 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:paddingLeft="10dp"
-                            android:text="Twitter"
-                            android:textColor="#0022FF"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:id="@+id/tvTW"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:fontFamily="sans-serif-light"
-                            android:paddingLeft="25dp"
-                            android:text="ABC123"
-                            android:textColor="#FFE600"
-                            android:textSize="16sp"
+                            android:paddingLeft="15dp"
+                            android:text="Email"
+                            android:textColor="#0288D1"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="6dp"
+                                android:src="@drawable/icons_phone" />
+
+                            <TextView
+                                android:id="@+id/tvTW"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="sans-serif-light"
+                                android:paddingLeft="10dp"
+                                android:text="Leduchoang@gmail.com"
+                                android:textColor="#1D26DD"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:layout_marginTop="8dp"
-                            android:background="@color/grey" />
+                            android:background="@color/purple_500" />
 
                     </LinearLayout>
 
@@ -262,23 +344,42 @@
                             android:layout_height="wrap_content"
                             android:paddingLeft="15dp"
                             android:text="Facebook"
-                            android:textColor="#0022FF"
-                            android:textSize="15sp" />
-
-                        <TextView
-                            android:id="@+id/tvFB"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:layout_marginBottom="3dp"
-                            android:fontFamily="sans-serif-light"
-                            android:paddingLeft="25dp"
-                            android:text="Lê Đức Hoàng"
-                            android:textColor="#FFE600"
-                            android:textSize="16sp"
+                            android:textColor="#0288D1"
+                            android:textSize="18sp"
                             android:textStyle="bold" />
 
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="6dp"
+                                android:src="@drawable/icons_facebook" />
+
+                            <TextView
+                                android:id="@+id/tvFB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="sans-serif-light"
+                                android:paddingLeft="10dp"
+                                android:text="Leduchoang@gmail.com"
+                                android:textColor="#1D26DD"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/purple_500" />
                     </LinearLayout>
+
                 </LinearLayout>
             </RelativeLayout>
 
@@ -287,10 +388,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_below="@+id/layout2"
+                android:layout_marginTop="8dp"
                 android:background="@drawable/mau3" />
 
         </RelativeLayout>
 
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/menu_button_nav"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconSize="40dp"
+            app:itemIconTint="@color/custom_bottom"
+            app:itemTextColor="@color/white"/>
     </RelativeLayout>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
@@ -301,7 +413,9 @@
         app:itemTextColor="#FFFFFF"
         app:drawerLayoutCornerSize="50dp"
         app:headerLayout="@layout/layout_header_nav"
-        app:menu="@menu/menu_nav"/>
+        app:menu="@menu/menu_nav"
+        />
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

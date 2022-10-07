@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mau4"
+    ><RelativeLayout
+
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+
+    <RelativeLayout
+        android:id="@+id/imgUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:padding="5dp"
+        android:background="@drawable/circle_border">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/circle"
+                android:scaleType="centerInside"
+                android:src="@drawable/profile" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Danh Sách Bài Đăng"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Lê Đức Hoàng"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name1"
+        android:layout_marginLeft="105dp"
+        android:gravity="center"
+        android:text="2050531200150"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/mau3">
+
+            <ImageView
+                android:id="@+id/imageviewHinh"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/textviewTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageviewHinh"
+            android:gravity="center"
+            android:text="Pizza"
+            android:textColor="#208AF3"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textviewMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewTen"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="25 items"
+            android:textColor="#F80000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textviewMoTa"
+            android:layout_margin="20dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Mỗi bạn tự tạo một danh sách của riêng mình, giống nhau hoặc quá thông dụng đều không được điểm cao.
+Các màn hình có thể chuyển qua lại thông qua intent
+Login thì sẽ vào màn hình danh sách"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/bg_dish.xml" value="0.1995" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/circle.xml" value="0.216" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/circle_border.xml" value="0.1995" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/ic_facebook.xml" value="0.1955" />
@@ -12,19 +13,29 @@
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/mau2.xml" value="0.1035" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/mau4.xml" value="0.1995" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/quayve.xml" value="0.216" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/right.xml" value="0.118" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/switch_trcks.xml" value="0.1955" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/switch_tumbs.xml" value="0.209" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/vien.xml" value="0.2045" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable-v24/vienbutton.xml" value="0.2045" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable/ic_baseline_playlist_add_24.xml" value="0.186" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable/ic_list.xml" value="0.1105" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable/mau1.xml" value="0.209" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable/mau3.xml" value="0.1035" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable/mau5.xml" value="0.186" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/drawable/mau6.xml" value="0.186" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/activity_danh_sach_file.xml" value="0.264" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/activity_danh_sach_mon_hoc.xml" value="0.264" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/activity_danh_sach_mon_hoc2.xml" value="0.264" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/activity_listview.xml" value="0.17028985507246377" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/item_file.xml" value="0.264" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/item_monhoc.xml" value="0.264" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/layout.xml" value="0.17028985507246377" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/layout_header_nav.xml" value="0.264" />
-        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/profile.xml" value="0.264" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/layout/profile.xml" value="0.25" />
+        <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/menu/menu_button_nav.xml" value="0.23148148148148148" />
         <entry key="..\:/LTDTDD/BaiTapGiuaKi_LTDTDD/app/src/main/res/menu/menu_nav.xml" value="0.24583333333333332" />
       </map>
     </option>
