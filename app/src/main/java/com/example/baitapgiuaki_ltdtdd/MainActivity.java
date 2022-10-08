@@ -85,32 +85,33 @@ public class MainActivity extends AppCompatActivity {
                         editor.remove("checked");
                         editor.commit();
                     }
-                    Intent intent=new Intent(getApplicationContext(),Activity_profile.class);
+                    Intent intent=new Intent(getApplicationContext(),Activity_home_page.class);
                     startActivity(intent);
                 }else {
-                    {
                         if(uername.equals("")==true&&pass.equals("")==true){
-                        String uername1 =eMails.getText().toString().trim();
-                        String pass1 =passwordss.getText().toString().trim();
-                        String pass2 =passwords01.getText().toString().trim();
-                        if(pass1.equals(passwordss)==pass2.equals(passwords01)){
-                            Intent intent=new Intent(getApplicationContext(),Activity_profile.class);
-                            startActivity(intent);
-                            Toast.makeText(MainActivity.this, "Đăng Nhập Thành Công ", Toast.LENGTH_SHORT).show();
-                        }else {
-                            if (uername1.equals("")==true){
-                                Toast.makeText(MainActivity.this, "Yêu Cầu Nhập Email", Toast.LENGTH_SHORT).show();
-                            }
-                            if (pass1.equals(passwordss.getText().toString())!=pass2.equals(passwords01.getText().toString())){
-                                Toast.makeText(MainActivity.this, "Mật khẩu không khớp", Toast.LENGTH_SHORT).show();
-                            }
-                            if (pass1.equals("")==true||pass2.equals("")==true){
-                                Toast.makeText(MainActivity.this, "Yêu Cầu Nhập mật khẩu", Toast.LENGTH_SHORT).show();
-                            }
-                        }
+                            String uername1 =eMails.getText().toString().trim();
+                            String pass1 =passwordss.getText().toString().trim();
+                            String pass2 =passwords01.getText().toString().trim();
+                            if( uername1.equals("")==false && passwordss.getText().toString() != passwords01.getText().toString()){
+                                Intent intent=new Intent(getApplicationContext(),Activity_home_page.class);
+                                startActivity(intent);
+                                Toast.makeText(MainActivity.this, "Đăng Nhập Thành Công ", Toast.LENGTH_SHORT).show();
+                            }else {
+                                if (uername1.equals("")==true){
+                                    Toast.makeText(MainActivity.this, "Yêu Cầu Nhập Email", Toast.LENGTH_SHORT).show();
+                                }
+                                if (passwordss.getText().toString()==passwords01.getText().toString()){
+                                    Toast.makeText(MainActivity.this, "Mật khẩu không khớp", Toast.LENGTH_SHORT).show();
+                                }
+                                if (pass1.equals("")==true||pass2.equals("")==true){
+                                    Toast.makeText(MainActivity.this, "Yêu Cầu Nhập mật khẩu", Toast.LENGTH_SHORT).show();
+                                }
+                            }}else {
+                                Toast.makeText(MainActivity.this, "Đăng Nhập Không Thành Công", Toast.LENGTH_SHORT).show();
+
                     }
                 }}
-            }
+
         });
     }
 }

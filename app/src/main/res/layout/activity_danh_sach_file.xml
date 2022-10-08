@@ -8,11 +8,20 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-
         android:id="@+id/layout1"
         android:layout_width="match_parent"
         android:layout_height="130dp">
-
+        <ImageButton
+            android:id="@+id/imgSignup"
+            android:layout_width="35dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/quayve" />
         <RelativeLayout
             android:id="@+id/imgUser"
             android:layout_width="wrap_content"
@@ -35,15 +44,13 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/profile" />
             </androidx.cardview.widget.CardView>
-
         </RelativeLayout>
-
         <TextView
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="105dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:gravity="center"
             android:text="Danh Sách Bài Đăng"
             android:textColor="@color/white"
@@ -56,7 +63,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/name"
             android:layout_marginLeft="105dp"
-            android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Lê Đức Hoàng"
             android:textColor="@color/white"
@@ -237,6 +243,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:id="@+id/BottomNavigationView"
         android:background="@android:color/transparent"
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu_button_nav"

@@ -1,5 +1,6 @@
 package com.example.baitapgiuaki_ltdtdd;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,37 +10,45 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Activity_File extends AppCompatActivity {
+    private ImageView imgSignup;
     private List<File> arrayFile = new ArrayList<>();
     private File_Adapter adapter;
     private ListView lvFile;
-    private EditText editSchoolName;
-    private EditText editSchoolAddress;
+    private EditText editNamefie;
+    private EditText editAddressfile;
     private TextView tv_add,tv_Close;
     private RelativeLayout layout;
     private LinearLayout layout2;
+    private com.google.android.material.bottomnavigation.BottomNavigationView BottomNavigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_danh_sach_file);
-        editSchoolName = findViewById(R.id.editSchoolName);
-        editSchoolAddress = findViewById(R.id.editSchoolAddress);
+        editNamefie = findViewById(R.id.editSchoolName);
+        editAddressfile = findViewById(R.id.editSchoolAddress);
         tv_add=findViewById(R.id.tv_add);
         tv_Close=findViewById(R.id.tvClose);
         layout=findViewById(R.id.layout4);
         layout2=findViewById(R.id.layout3);
+        imgSignup =findViewById(R.id.imgSignup);
+        BottomNavigationView =findViewById(R.id.BottomNavigationView);
         AnhXa();
         adapter =new File_Adapter(this,R.layout.item_file,arrayFile);
         lvFile.setAdapter(adapter);
@@ -57,12 +66,19 @@ public class Activity_File extends AppCompatActivity {
 
             }
         });
+        imgSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(), Activity_profile.class);
+                startActivity(intent);
+            }
+        });
         findViewById(R.id.btnOk).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 layout.setVisibility(View.GONE);
                 layout2.setVisibility(View.VISIBLE);
-                addSchool();
+                addFile();
             }
         });
         tv_add.setOnClickListener(new View.OnClickListener() {
@@ -81,13 +97,30 @@ public class Activity_File extends AppCompatActivity {
                 layout.setVisibility(View.GONE);
             }
         });
+        BottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id=item.getItemId();
+                if(id== R.id.nav_home){
+                    Intent intent=new Intent(getApplicationContext(), Activity_home_page.class);
+                    startActivity(intent);
+                }if(id== R.id.nav_profile){
+                    Intent intent=new Intent(getApplicationContext(), Activity_profile.class);
+                    startActivity(intent);
+                }if (id==R.id.nav_file){
+                    Intent intent=new Intent(getApplicationContext(), Activity_File.class);
+                    startActivity(intent);
+                }
+                return false;
+            }
+        });
     }
-    private void addSchool() {
-        String name = editSchoolName.getText().toString();
-        String address = editSchoolAddress.getText().toString();
-        int hinh = (R.drawable.img_2);
+    private void addFile() {
+        String name = editNamefie.getText().toString();
+        String address = editAddressfile.getText().toString();
+        int hinh = (R.drawable.img_danang);
         if(TextUtils.isEmpty(name) || TextUtils.isEmpty(address)){
-            Toast.makeText(this, "Please enter school name and address", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please enter file name and address", Toast.LENGTH_SHORT).show();
             return;
         }
         File s = new File(name,address,hinh);
@@ -112,16 +145,16 @@ public class Activity_File extends AppCompatActivity {
     private void AnhXa() {
         lvFile=(ListView) findViewById(R.id.listviewMonHoc);
         arrayFile=new ArrayList<>();
-        arrayFile.add(new File("Spaghetti","120$",R.drawable.img_2));
-        arrayFile.add(new File("Cream","50$",R.drawable.img_2));
-        arrayFile.add(new File("Hamburger","150$",R.drawable.img_2));
-        arrayFile.add(new File("Chicken KFC","140$",R.drawable.img_2));
+        arrayFile.add(new File("Hội An","Phố cổ Hội An",R.drawable.img_hoian));
+        arrayFile.add(new File("Thành Phố Huế","Cầu Trường Tiền",R.drawable.img_hue));
+        arrayFile.add(new File("Quảng Bình","Động Phong Nha",R.drawable.img_quangbinh));
+        arrayFile.add(new File("Đà Lạt","Quảng trừơng Trúc Lâm Viên",R.drawable.img_dalat));
 
     }
     private void deleteFile(final int position){
         new AlertDialog.Builder(this)
-                .setTitle("Delete Dish")
-                .setMessage("Are you want delete Dish?")
+                .setTitle("Delete File")
+                .setMessage("Are you want delete file?")
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

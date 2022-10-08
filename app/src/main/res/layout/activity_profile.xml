@@ -4,23 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:openDrawer="start"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Activity_profile"
-    tools:openDrawer="start">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <com.google.android.material.appbar.AppBarLayout
-            android:layout_width="70dp"
-            android:background="@android:color/transparent"
-            android:layout_height="wrap_content">
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:background="@android:color/transparent"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"/>
-        </com.google.android.material.appbar.AppBarLayout>
+    tools:context=".Activity_profile">
         <RelativeLayout
             android:background="@drawable/mau2"
             android:layout_width="match_parent"
@@ -44,12 +30,13 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="20dp"
-                        android:padding="5dp"
-                        android:background="@drawable/circle_border">
+                        android:background="@drawable/circle_border"
+                        android:padding="5dp">
+
                         <androidx.cardview.widget.CardView
-                            app:cardCornerRadius="50dp"
                             android:layout_width="100dp"
-                            android:layout_height="100dp">
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="50dp">
 
                             <ImageView
                                 android:id="@+id/img"
@@ -88,12 +75,24 @@
                         android:textSize="18sp" />
 
                     <ImageButton
+                        android:id="@+id/logout"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icons8_logout" />
+
+                    <ImageButton
                         android:id="@+id/imgSignup"
-                        android:layout_width="35dp"
-                        android:layout_height="37dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_alignParentRight="true"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="16dp"
+                        android:layout_margin="20dp"
                         android:adjustViewBounds="true"
                         android:background="@null"
                         android:scaleType="centerInside"
@@ -111,12 +110,12 @@
                 <LinearLayout
 
                     android:id="@+id/rellay1"
-                    android:layout_width="300dp"
+                    android:layout_width="400dp"
                     android:layout_height="66dp"
                     android:gravity="center">
 
                     <LinearLayout
-                        android:layout_width="120dp"
+                        android:layout_width="150dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/mau4"
@@ -146,7 +145,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="120dp"
+                        android:layout_width="150dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/mau4"
@@ -224,8 +223,8 @@
                                 android:layout_marginLeft="50dp"
                                 android:layout_marginTop="3dp"
                                 android:fontFamily="sans-serif-light"
-                                android:paddingLeft="10dp"
-                                android:text="Leduchoang@gmail.com"
+                                android:paddingLeft="20dp"
+                                android:text="Hoang@gmail.com"
                                 android:textColor="#1D26DD"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
@@ -272,8 +271,8 @@
                                 android:layout_marginLeft="50dp"
                                 android:layout_marginTop="3dp"
                                 android:fontFamily="sans-serif-light"
-                                android:paddingLeft="10dp"
-                                android:text="Leduchoang@gmail.com"
+                                android:paddingLeft="20dp"
+                                android:text="0912768911"
                                 android:textColor="#1D26DD"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
@@ -296,7 +295,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="15dp"
-                            android:text="Email"
+                            android:text="From"
                             android:textColor="#0288D1"
                             android:textSize="18sp"
                             android:textStyle="bold" />
@@ -310,7 +309,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
                                 android:layout_marginRight="6dp"
-                                android:src="@drawable/icons_phone" />
+                                android:src="@drawable/icons_fromcloud" />
 
                             <TextView
                                 android:id="@+id/tvTW"
@@ -319,8 +318,8 @@
                                 android:layout_marginLeft="50dp"
                                 android:layout_marginTop="3dp"
                                 android:fontFamily="sans-serif-light"
-                                android:paddingLeft="10dp"
-                                android:text="Leduchoang@gmail.com"
+                                android:paddingLeft="20dp"
+                                android:text="Quảng Nam"
                                 android:textColor="#1D26DD"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
@@ -366,8 +365,8 @@
                                 android:layout_marginLeft="50dp"
                                 android:layout_marginTop="3dp"
                                 android:fontFamily="sans-serif-light"
-                                android:paddingLeft="10dp"
-                                android:text="Leduchoang@gmail.com"
+                                android:paddingLeft="20dp"
+                                android:text="Hoàng Lê"
                                 android:textColor="#1D26DD"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
@@ -379,7 +378,6 @@
                             android:layout_marginTop="8dp"
                             android:background="@color/purple_500" />
                     </LinearLayout>
-
                 </LinearLayout>
             </RelativeLayout>
 
@@ -391,31 +389,17 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/mau3" />
 
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/BottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                app:itemIconSize="40dp"
+                app:itemIconTint="@color/custom_bottom"
+                app:itemTextColor="@color/white"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/menu_button_nav" />
         </RelativeLayout>
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@android:color/transparent"
-            android:layout_alignParentBottom="true"
-            app:menu="@menu/menu_button_nav"
-            app:labelVisibilityMode="unlabeled"
-            app:itemIconSize="40dp"
-            app:itemIconTint="@color/custom_bottom"
-            app:itemTextColor="@color/white"/>
-    </RelativeLayout>
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="#02FBFB"
-        app:itemTextColor="#FFFFFF"
-        app:drawerLayoutCornerSize="50dp"
-        app:headerLayout="@layout/layout_header_nav"
-        app:menu="@menu/menu_nav"
-        />
-
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -5,12 +5,12 @@
         <item android:id="@+id/nav_home"
             android:icon="@drawable/icons_home"
             android:title="@string/nav_home" />
-        <item android:id="@+id/nav_favorite"
+        <item android:id="@+id/nav_profile"
+            android:icon="@drawable/icons_profile"
+            android:title="@string/nav_profile" />
+        <item android:id="@+id/nav_file"
             android:icon="@drawable/icons_file"
             android:title="@string/nav_File"/>
-        <item android:id="@+id/app_name"
-            android:icon="@drawable/icons_logout"
-            android:title="@string/app_name"/>
 </group>
 
 </menu>

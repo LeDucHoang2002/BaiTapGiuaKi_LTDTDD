@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginPageUi">
         <activity
+            android:name=".Activity_home_page"
+            android:exported="false" />
+        <activity
             android:name=".Activity_File2"
             android:exported="false" />
         <activity
             android:name=".Activity_File"
-            android:exported="false" />
-        <activity
-            android:name=".Activity_Listview"
             android:exported="false" />
         <activity
             android:name=".Activity_profile"
